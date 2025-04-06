@@ -15,7 +15,7 @@ with open('sin_values.csv', mode='w', newline='') as file:
     # Generate values
     x = start
     while x <= end:
-        writer.writerow([round(x, 1), round(math.sin(x), 6)])
+        writer.writerow([round(x, 1), round(math.sin(x)+math.sin(4*x), 6)])
         x += step
 
 print("CSV file 'sin_values.csv' created successfully.")
